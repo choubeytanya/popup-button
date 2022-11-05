@@ -1,0 +1,68 @@
+.container {
+  background-color: aqua;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.star-icon {
+  font-size: 40px;
+  position: relative;
+  z-index: 1; }
+
+.btn {
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  border-radius: 30px;
+  animation-name: first;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; }
+
+@keyframes first {
+  0% {
+    width: 40px; }
+  10% {
+    width: 150px; }
+  70% {
+    width: 150px; }
+  85% {
+    width: 40px; }
+  100% {
+    width: 40px; } }
+.box {
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 3px;
+  position: relative;
+  animation-name: second;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-iteration-count: infinite; }
+
+@keyframes second {
+  0% {
+    opacity: 0;
+    left: -50px; }
+  10% {
+    opacity: 0;
+    left: -50px; }
+  20% {
+    opacity: 1;
+    left: 0px; }
+  65% {
+    opacity: 1;
+    left: 0px; }
+  75% {
+    opacity: 0;
+    left: -50px; }
+  100% {
+    opacity: 0;
+    left: -50px; } }
+
+/*# sourceMappingURL=style.css.map */
